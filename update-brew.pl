@@ -27,6 +27,8 @@ sub print_color_line {
     print color("bold blue"), "==> ", color("reset") . color("bold"), "$str\n", color("reset");
 }
 
+system ("ssh-add -A");
+
 print_color_line("brew cleanup");
 system ("brew cleanup");
 
